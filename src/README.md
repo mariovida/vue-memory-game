@@ -4,9 +4,9 @@
 <p align="left">npm install</p>
 <h3 align="left">Compiles and hot-reloads for development</h3>
 <p align="left">npm run serve</p>
-<p align="left">Compiles and minifies for production</p>
+<h3 align="left">Compiles and minifies for production</h3>
 <p align="left">npm run build</p>
-<p align="left">Lints and fixes files</p>
+<h3 align="left">Lints and fixes files</h3>
 <p align="left">npm run lint</p>
 
 <h3 align="left">Languages and Tools:</h3>
