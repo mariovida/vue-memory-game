@@ -1,9 +1,7 @@
 <h1 align="left">Vue Memory Game</h1>
 
 <h1 align="left">Project setup:</h1>
-```
-npm install
-```
+<p align="left">npm install</p>
 
 <h3 align="left">Compiles and hot-reloads for development</h3>
 ```
