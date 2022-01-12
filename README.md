@@ -1,24 +1,24 @@
-# vue-memory-game-new
+<h1 align="left">Vue Memory Game</h1>
 
-## Project setup
+<h1 align="left">Project setup:</h1>
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+<p align="left">Compiles and hot-reloads for development</p>
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+<p align="left">Compiles and minifies for production</p>
 ```
 npm run build
 ```
 
-### Lints and fixes files
+<p align="left">Lints and fixes files</p>
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </p>
