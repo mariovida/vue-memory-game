@@ -5,7 +5,7 @@
 npm install
 ```
 
-<p align="left">Compiles and hot-reloads for development</p>
+<h3 align="left">Compiles and hot-reloads for development</h3>
 ```
 npm run serve
 ```
