@@ -1,13 +1,30 @@
-<h1 align="left">Vue Memory Game</h1>
+<h1 align="center">Welcome to Dashboard Website 👋</h1>
 
-<h1 align="left">Project setup:</h1>
-<p align="left">npm install</p>
-<h3 align="left">Compiles and hot-reloads for development</h3>
-<p align="left">npm run serve</p>
-<h3 align="left">Compiles and minifies for production</h3>
-<p align="left">npm run build</p>
-<h3 align="left">Lints and fixes files</h3>
-<p align="left">npm run lint</p>
+![image](/src/assets/screen_all.png)
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </p>
+<h3 align="center">✔️ Finished</h3>
+
+
+## Tech and tools used
+<p align="left">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+</p>
+
+
+## Install
+
+```sh
+npm install
+npm run serve
+```
+
+
+## Showcase
+![image](/src/assets/screen_start.png)
+![image](/src/assets/screen_win.png)
+
+## Show your support
+
+<p align="left">Give a ⭐️ if this project helped you!</p>

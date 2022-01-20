@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <div class="gameOver" v-if="gameOver">
-      <h2>Igra završena</h2>
-      <p>Trebalo ti je {{ clicks }} klikova!</p>
-      <button @click="resetGame">Kreni ponovo</button>
+      <h2>Congratulations! 👏</h2>
+      <p>It took you <b>{{ clicks }}</b> clicks to finish</p>
+      <button @click="resetGame">START AGAIN</button>
     </div>
-    <p class="stats">Klikovi: {{ clicks }}</p>
+    <p class="stats">Clicks: {{ clicks }}</p>
     <ul class="cards" :class="{ 'is-clickable': clickable }">
       <Card
         v-for="(card, index) in shuffled"
@@ -64,31 +64,21 @@ export default {
   },
   methods: {
     cardClick(card, index) {
-      // šaljemo vrijednost kliknute karte (tipa 🐶) card i njen index odnosno redoslijed u arrayu, primjerice 0 ili 5 (gdje je 0 prvi element u nizu)
-
-      // povećavamo klikove zbog statistika da znamo koliko smo dobri
       this.clicks++
-
-      // dohvaćamo vrijednost prve karte, npr. 🐶
       const firstCard = this.shuffled[this.firstClickIndex]
 
       if (this.firstClickIndex === null) {
-        // ako nema prvog klika onda ga postavljamo
         this.firstClickIndex = index
       } else {
-        // ako prvi klik postoji moramo postaviti drugi
         this.secondClickIndex = index
 
         if (firstCard === card) {
-          // ako se vrijednost prve kartice koju smo gore definirali podudara s vrijednosti kartice na koju smo upravo sad kliknuli onda poguraj vrijednosti u found i resetiraj prvi i drugi klik
           this.found.push(firstCard)
           this.firstClickIndex = null
           this.secondClickIndex = null
         } else {
-          // ako se ne podudaraju kartice onda ne možemo klikati po ničemu dok ne resetiramo klikove
           this.clickable = false
           setTimeout(() => {
-            // nakon što korisniku pokažemo njegove rezultate oslobodimo da može klikati ponovo i resetiramo vrijednost prvog i drugog klika, odnosno počinjemo ponovo klikati da nađemo prvi i potom drugi par
             this.clickable = true
             this.firstClickIndex = null
             this.secondClickIndex = null
@@ -97,7 +87,7 @@ export default {
       }
     },
     resetGame() {
-      this.cards = [...this.cards] // triggeramo da se shuffle computed prop ponovo okine
+      this.cards = [...this.cards]
       this.clicks = 0
       this.found = []
       this.gameOver = false
@@ -108,8 +98,14 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: 'Poppins';
+  background-color: #D9D9D9;
+  height: 100vh;
 }
 .cards {
   display: grid;
@@ -125,9 +121,13 @@ export default {
 }
 .stats {
   position: absolute;
-  top: 0;
+  top: 15px;
   right: 35px;
   font-size: 26px;
+  font-weight: 500;
+  color: #333;
+  padding: 5px 12px;
+  border-bottom: 2px solid #333;
 }
 .gameOver {
   position: fixed;
@@ -138,6 +138,7 @@ export default {
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.4);
   padding: 60px 70px;
   background: white;
+  color: #333;
   text-align: center;
   font-size: 18px;
   border-radius: 6px;
@@ -147,15 +148,15 @@ export default {
 }
 .gameOver button {
   all: unset;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 12px 32px;
-  background: black;
+  background: #333;
   color: white;
   border-radius: 6px;
   cursor: pointer;
   transition: 0.1s;
 }
 .gameOver button:hover {
-  background: #333;
+  background: #404040;
 }
 </style>
