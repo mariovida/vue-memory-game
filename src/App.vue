@@ -48,7 +48,7 @@ export default {
       timeout: null,
       clickable: true,
       found: [],
-      gameOver: true
+      gameOver: false
     }
   },
   computed: {
@@ -114,9 +114,9 @@ export default {
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-  padding: 40px 0;
-  max-width: 1080px;
+  grid-gap: 20px;
+  padding: 20px 0;
+  max-width: 1000px;
   margin: 0 auto;
   pointer-events: none;
 }
