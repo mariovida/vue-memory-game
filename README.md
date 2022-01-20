@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to Dashboard Website 👋</h1>
 
-![image](/src/assets/screen_home.png)
+![image](/src/assets/screen_all.png)
 
 <h3 align="center">✔️ Finished</h3>
 
@@ -21,6 +21,10 @@ npm run serve
 ```
 
 
+## Showcase
+![image](/src/assets/screen_start.png)
+![image](/src/assets/screen_win.png)
+
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+<p align="left">Give a ⭐️ if this project helped you!</p>
