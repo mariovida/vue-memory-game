@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Dashboard Website 👋</h1>
+<h1 align="center">Vue Memory Game</h1>
 
 ![image](/src/assets/screen_show.png)
 
